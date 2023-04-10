@@ -1,0 +1,16 @@
+package practice;
+
+import java.util.List;
+import java.util.*;
+
+
+public class Queueee {
+
+	public static void main(String[] args) {
+		
+		Queue <String> q=new PriorityQueue<>();
+		q.addAll(List.of("akhi","Chotu","akhilesh"));
+		System.out.println(q.poll());
+	}
+
+}

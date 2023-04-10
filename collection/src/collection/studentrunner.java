@@ -1,0 +1,18 @@
+package collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class studentrunner {
+
+	public static void main(String[] args) {
+		
+		List<student> offer = List.of(new student(5," akhilesh"),new student(85,"darshil"));
+		List<student> al= new ArrayList<>(offer);
+		System.out.print(offer);
+		Collections.sort(al);
+		System.out.print(al);
+	}
+
+}

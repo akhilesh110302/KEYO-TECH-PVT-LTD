@@ -1,0 +1,13 @@
+package collection;
+
+import java.util.List;
+
+public class studentrunner {
+
+	public static void main(String[] args) {
+		
+		List<student> offer = List.of(new student(062," akhilesh"),new student(063,"darshil"));
+		System.out.print(offer);
+	}
+
+}

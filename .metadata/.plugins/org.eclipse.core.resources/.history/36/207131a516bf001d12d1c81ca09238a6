@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class executorservicese {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    //ExecutorService ex=Executors.newSingleThreadExecutor();
+    ExecutorService ex=Executors.newFixedThreadPool(3);
+    ex.execute(new task1());
+    ex.execute((new Thread(new task2())));
+    System.out.println("Task3");
+	for(int i=21;i<=30;i++)
+	{
+		System.out.print(i+" ");
+	}
+	System.out.println("Task3 Over");
+	System.out.println("Main Over");
+	}
+
+}

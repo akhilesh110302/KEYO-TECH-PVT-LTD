@@ -1,0 +1,14 @@
+package practice;
+
+public class genericsRunner {
+
+	public static void main(String[] args) {
+		generics g=new generics();
+		
+		g.addElement("akhilesh");
+		g.addElement("akhil");
+		g.getElement(Integer.valueOf(62));
+		g.getElement(Integer.valueOf(67));
+	}
+
+}

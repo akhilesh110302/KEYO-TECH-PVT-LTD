@@ -1,0 +1,32 @@
+package practice;
+	class t 
+	{
+		public t()
+		{
+			System.out.print("t class ");
+		}
+		public void akki()
+		{
+			System.out.print("akki class ");
+		}
+	}
+	 class t1 extends t
+	{
+		 
+		 t1()
+		{
+			 super.akki();
+			System.out.print("t1 class ");
+		}
+	}
+	 
+public class superr {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		t1 t=new t1();
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+public class takingInputfromUserInArrayList {
+
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> a= new ArrayList<Integer>();
+		Scanner sc=new Scanner(System.in);
+		int x = 0;
+		while(x!=sc.nextInt())
+		{			
+			a.add(x);
+		}
+		Set<Integer> link =new LinkedHashSet<>(a);
+//		for(Integer i:a)
+//		{
+			System.out.println(link);
+//		}
+		
+	}
+}

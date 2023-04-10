@@ -1,0 +1,30 @@
+package arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class iterarator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<String> words =List.of("akki","chotu","piyu","ljikjkljh","gvcghvhu","uuuuu");
+		List<String> wordsA =new ArrayList<String>(words); 
+		for(String a:words)
+		{
+			if(a.endsWith("u")) 
+			{
+				
+				wordsA.remove(a);
+			}
+			
+		}
+		for(String a:wordsA)
+		{
+			System.out.println(a);
+			
+		}
+		
+	}
+
+}

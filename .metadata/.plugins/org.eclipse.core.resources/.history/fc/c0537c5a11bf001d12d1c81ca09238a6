@@ -1,0 +1,15 @@
+package practice;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class executorservicese {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    ExecutorService ex=Executors.newSingleThreadExecutor();
+    ex.execute(new task1());
+    ex.execute((new Thread(new task2())));
+	}
+
+}
